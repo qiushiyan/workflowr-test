@@ -1,0 +1,17 @@
+---
+title: "Some analysis for project 1"
+---
+
+# Summary 
+
+```{r}
+knitr::kable(cars)
+```
+
+
+# Visualization 
+
+```{r}
+plot(cars)
+```
+

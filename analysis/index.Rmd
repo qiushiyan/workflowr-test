@@ -8,4 +8,10 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Welcome to the data science teams website 
+
+Some projects we have been working on: 
+
+- [project-1](./proj-1.html)
+
+- [project-2](./proj-2.html)
