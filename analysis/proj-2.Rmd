@@ -39,3 +39,13 @@ x = range(11)
 plt.plot(x)
 ```
 
+```{r move-python-figs, include=FALSE}
+local({
+  dir_fig <- here::here("docs", "figure", "proj-2.Rmd")
+  fs::dir_create(dir_fig)
+  fs::file_move(
+    fs::dir_ls(here::here("figure", "proj-2.Rmd")),
+    dir_fig
+  )
+})
+```

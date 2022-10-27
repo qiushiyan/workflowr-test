@@ -431,10 +431,10 @@ changes </a>
 <div id="strongRMarkdownfilestronguncommittedchanges"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown is untracked by Git. To know which version of the R
-Markdown file created these results, you’ll want to first commit it to
-the Git repo. If you’re still working on the analysis, you can ignore
-this warning. When you’re finished, you can run
+<p>The R Markdown file has unstaged changes. To know which version of
+the R Markdown file created these results, you’ll want to first commit
+it to the Git repo. If you’re still working on the analysis, you can
+ignore this warning. When you’re finished, you can run
 <code>wflow_publish</code> to commit the R Markdown file and build the
 HTML.</p>
 </div>
@@ -527,13 +527,13 @@ project makes it easier to run your code on other machines.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong1883e0a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongf5f6c11">
 <span class="glyphicon glyphicon-ok text-success"
-aria-hidden="true"></span> <strong>Repository version:</strong> 1883e0a
+aria-hidden="true"></span> <strong>Repository version:</strong> f5f6c11
 </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong1883e0a"
+<div id="strongRepositoryversionstrongf5f6c11"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -542,7 +542,7 @@ and connecting the code version to the results is critical for
 reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 1883e0a.
+The results in this page were generated with repository version f5f6c11.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -559,14 +559,12 @@ were generated:
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-
-Untracked files:
-    Untracked:  analysis/proj-1.Rmd
-    Untracked:  analysis/proj-2.Rmd
-    Untracked:  figure/
+    Ignored:    analysis/figure/
 
 Unstaged changes:
-    Modified:   analysis/index.Rmd
+    Modified:   analysis/proj-2.Rmd
+    Deleted:    figure/proj-2.Rmd/unnamed-chunk-2-1.png
+    Deleted:    figure/proj-2.Rmd/unnamed-chunk-3-3.png
 
 </code></pre>
 <p>
@@ -581,10 +579,73 @@ have uncommitted changes.
 <hr>
 </div>
 <div id="versions" class="tab-pane fade">
+
 <p>
-There are no past versions. Publish this analysis with
-<code>wflow_publish()</code> to start tracking its development.
+These are the previous versions of the repository in which changes were
+made to the R Markdown (<code>analysis/proj-2.Rmd</code>) and HTML
+(<code>docs/proj-2.html</code>) files. If you’ve configured a remote Git
+repository (see <code>?wflow_git_remote</code>), click on the hyperlinks
+in the table below to view the files as they were in that past version.
 </p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+f5f6c11
+</td>
+<td>
+qiushi
+</td>
+<td>
+2022-10-27
+</td>
+<td>
+initial commit
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+f5f6c11
+</td>
+<td>
+qiushi
+</td>
+<td>
+2022-10-27
+</td>
+<td>
+initial commit
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr>
 </div>
 </div>
@@ -617,9 +678,83 @@ sns.scatterplot(x=&quot;carat&quot;, y=&quot;price&quot;,
                 data=diamonds, ax=ax)
 plt.show()</code></pre>
 <p><img src="figure/proj-2.Rmd/unnamed-chunk-2-1.png" width="624" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-2-1">
+Past versions of unnamed-chunk-2-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-2-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+f5f6c11
+</td>
+<td>
+qiushi
+</td>
+<td>
+2022-10-27
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="python"><code>x = range(11)
 plt.plot(x)</code></pre>
 <p><img src="figure/proj-2.Rmd/unnamed-chunk-3-3.png" width="624" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-3-3">
+Past versions of unnamed-chunk-3-3.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-3-3" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+f5f6c11
+</td>
+<td>
+qiushi
+</td>
+<td>
+2022-10-27
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -658,13 +793,13 @@ loaded via a namespace (and not attached):
 [25] xfun_0.33            fastmap_1.1.0        httr_1.4.4          
 [28] stringr_1.4.1        knitr_1.40           htmlwidgets_1.5.4   
 [31] fs_1.5.2             vctrs_0.4.2          sass_0.4.2          
-[34] grid_4.2.0           rprojroot_2.0.3      reticulate_1.25     
-[37] glue_1.6.2           R6_2.5.1             processx_3.7.0      
-[40] fansi_1.0.3          rmarkdown_2.16       callr_3.7.2         
-[43] magrittr_2.0.3       whisker_0.4          ps_1.7.1            
-[46] promises_1.2.0.1     htmltools_0.5.3      httpuv_1.6.6        
-[49] utf8_1.2.2           stringi_1.7.8        cachem_1.0.6        
-[52] zoo_1.8-10          </code></pre>
+[34] grid_4.2.0           rprojroot_2.0.3      here_1.0.1          
+[37] reticulate_1.25      glue_1.6.2           R6_2.5.1            
+[40] processx_3.7.0       fansi_1.0.3          rmarkdown_2.16      
+[43] callr_3.7.2          magrittr_2.0.3       whisker_0.4         
+[46] ps_1.7.1             promises_1.2.0.1     htmltools_0.5.3     
+[49] httpuv_1.6.6         utf8_1.2.2           stringi_1.7.8       
+[52] cachem_1.0.6         zoo_1.8-10          </code></pre>
 </div>
 </div>
 
